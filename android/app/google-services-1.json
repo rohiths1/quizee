@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "269992127672",
+    "project_id": "kbc-quiz-d6c43",
+    "storage_bucket": "kbc-quiz-d6c43.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269992127672:android:7f648c7a1e0c1b74e0584d",
+        "android_client_info": {
+          "package_name": "com.example.kbc_quiz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw_IyoCsljhr3BGXMBdlw6ML8-fsDLmus"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
