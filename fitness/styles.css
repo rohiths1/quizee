@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+.track-workouts-section {
+    padding: 40px 0;
+    background-color: #f9f9f9; /* Light gray background */
+}
+
+.track-workouts-section h2 {
+    text-align: center;
+}
+
+.track-workouts-section .form-group {
+    margin: 15px 0;
+}
+
+.track-workouts-section .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.progress-section {
+    padding: 40px 0;
+}
+
+.progress-bar {
+    margin-bottom: 20px;
+}
+
+.progress {
+    height: 10px;
+    background-color: #4caf50; /* Green color */
+    width: 0%; /* Adjust this dynamically */
+    transition: width 0.5s; /* Smooth transition for progress bar */
+}
+
+.container {
+    max-width: 800px; /* Container width */
+    margin: auto; /* Center the container */
+}
+
+.achievements-display {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light background */
+}
+
+.achievements-display h3 {
+    margin: 0;
+    color: #4CAF50; /* Green text */
+}
+
+.achievements-display ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+}
+
+.achievements-display li {
+    padding: 5px 0;
+    color: #555; /* Darker text color */
+}
+
+.btn {
+    background-color: #4caf50; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Button padding */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.track-workouts-section .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.success-message {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #4CAF50; /* Green border */
+    background-color: #dff0d8; /* Light green background */
+    color: #3c763d; /* Dark green text */
+    border-radius: 5px; /* Rounded corners */
+    display: none; /* Initially hidden */
+}
+
+.track-workouts-section .btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+#achievements-list {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Add this to your styles.css */
+
+.cover-image {
+    background-image: url('C:\Users\Welcome\OneDrive\Documents\fitness\assets\cover.jpeg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color */
+    text-align: center;
+    position: relative;
+}
+
+.cover-content {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cover-content h1 {
+    font-size: 3em; /* Font size for title */
+    margin-bottom: 20px; /* Space below title */
+}
+
+.cover-content p {
+    font-size: 1.2em; /* Font size for description */
+    margin-bottom: 20px; /* Space below description */
+}
+
+.cover-content .btn {
+    padding: 10px 20px; /* Button padding */
+    font-size: 1em; /* Button font size */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Navbar styles */
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.brand-logo {
+    float: left;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    float: right;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('img/hero-bg.jpg') no-repeat center center/cover;
+    height: 400px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+/* Features Section */
+.features-section {
+    padding: 40px 0;
+    background: #f4f4f4;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.feature-item {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item img {
+    max-width: 80%;
+}
+
+/* Progress Section */
+.progress-section {
+    padding: 40px 0;
+}
+
+.progress-bar {
+    margin-bottom: 15px;
+}
+
+.progress {
+    height: 20px;
+    background: #4CAF50;
+    border-radius: 5px;
+}
+
+/* Leaderboard Section */
+.leaderboard-section {
+    padding: 40px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Signup/Login Forms */
+.signup-section, .login-section {
+    padding: 40px 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Buttons */
+.btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

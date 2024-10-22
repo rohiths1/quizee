@@ -1,0 +1,66 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitTrack - Fitness & Gamification Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="api.js" defer></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="brand-logo">FitTrack</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+                <li><a href="#signup">Sign Up</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+<body>
+    <!-- Sign-Up Form -->
+    <section id="signup" class="signup-section">
+        <div class="container">
+            <h2>Sign Up for FitTrack</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Login Form -->
+    <section id="login" class="login-section">
+        <div class="container">
+            <h2>Login to FitTrack</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email-login">Email:</label>
+                    <input type="email" id="email-login" required>
+                </div>
+                <div class="form-group">
+                    <label for="password-login">Password:</label>
+                    <input type="password" id="password-login" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

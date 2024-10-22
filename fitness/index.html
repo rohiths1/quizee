@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitTrack - Fitness & Gamification Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="api.js" defer></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="brand-logo">FitTrack</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+                <li><a href="file:///C:/Users/Welcome/OneDrive/Documents/fitness/logsignpage.html">Sign Up</a></li>
+                <li><a href="file:///C:/Users/Welcome/OneDrive/Documents/fitness/logsignpage.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home" class="hero-section">
+        <div class="hero-content"><br><br><br><br><br><br><br><br><br>
+         <br><br><br> <h1 style="color: blue; font-size: 3em; margin-bottom: 20px;">Welcome to FitTrack</h1>
+<p style="color: green; font-size: 1.2em; margin-bottom: 20px;">Your Ultimate Fitness Companion with AI-driven Gamification</p>
+
+ <img src="C:\Users\Welcome\OneDrive\Documents\fitness\assets\cover.jpeg" alt="Track Workouts">
+           <br><br> <a href="#features" class="btn">Explore Features</a>
+        </div>
+    </header>
+<br><br><br><br><br><br>
+
+    </section>
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+<br><br><br><br><br><br><br>
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <img src="C:\Users\Welcome\OneDrive\Documents\fitness\assets\trackworkout.jpg" alt="Track Workouts">
+                    <h3>Track Workouts</h3>
+                    <p>Log your exercises and track progress daily.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="C:\Users\Welcome\OneDrive\Documents\fitness\assets\nutrition.jpeg" alt="Monitor Nutrition">
+                    <h3>Monitor Nutrition</h3>
+                    <p>Log meals and keep tabs on your calorie intake.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="C:\Users\Welcome\OneDrive\Documents\fitness\assets\leaderboard.jpg" alt="Leaderboards">
+                    <h3>Leaderboards</h3>
+                    <p>Compete with friends and earn your place on the leaderboard.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="C:\Users\Welcome\OneDrive\Documents\fitness\assets\achieve.jpg" alt="Badges Earned">
+                    <h3>Achievements</h3>
+                    <p>Earn badges for completing challenges and reaching goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Gamification Progress Section -->
+    <section id="gamification" class="gamification-section">
+        <div class="container">
+            <h2>Gamification Progress</h2>
+            <div class="progress-bars">
+                <div class="progress-bar">
+                    <label>Running: 50% Complete</label>
+                    <div class="progress" style="width: 50%;"></div>
+                </div>
+                <div class="progress-bar">
+                    <label>Strength Training: 80% Complete</label>
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+                <div class="progress-bar">
+                    <label>Nutrition Goals: 60% Complete</label>
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Progress Section -->
+<section id="progress" class="progress-section">
+    <div class="container">
+        <h2>Your Progress</h2>
+        <p>Enter your details and check where you stand!</p>
+
+        <div class="progress-bars">
+            <div class="progress-bar">
+                <label>Weekly Steps: <span id="steps-progress">0</span> steps</label>
+                <div class="progress" style="width: 0%;"></div>
+            </div>
+            <div class="progress-bar">
+                <label>Workout Streak: <span id="streak-progress">0</span> days</label>
+                <div class="progress" style="width: 0%;"></div>
+            </div>
+        </div>
+
+        <form id="activity-form">
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <input type="text" id="activity" placeholder="Enter your activity" required>
+            <input type="number" id="steps" placeholder="Steps Walked" required>
+            <button type="submit" class="btn">Log Activity</button>
+        </form>
+
+        <h3>Leaderboard</h3>
+        <table id="leaderboard">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody id="leaderboard-body">
+                <!-- Leaderboard rows will be generated here -->
+            </tbody>
+        </table>
+    </div>
+</section>
+<!-- Progress Section -->
+<section id="progress" class="progress-section">
+    <div class="container">
+        <h2>Your Progress</h2>
+        <div class="progress-bars">
+            <div class="progress-bar">
+                <label>Workout Streak: <span id="streak-count">0</span> days</label>
+                <div class="progress" style="width: 0%;"></div>
+            </div>
+            <div class="progress-bar">
+                <label>Achievements Unlocked: <span id="achievements-count">0</span></label>
+                <div class="progress" style="width: 0%;"></div>
+            </div>
+        </div>
+        <form id="workout-form">
+            <input type="text" id="workout-name" placeholder="Enter your workout name" required>
+            <input type="number" id="workout-duration" placeholder="Duration in minutes" required>
+            <button type="submit" class="btn">Get Points Details</button>
+        </form>
+
+        <div id="achievement-display" class="achievement-display">
+    <h3>Congratulations!</h3>
+    <p>Achievements Unlocked:</p>
+    <ul id="achievement-list"></ul>
+    <div id="badge-display"></div>
+</div></section>
+
+
+
+
+<!-- Leaderboard Section 
+<section id="leaderboard" class="leaderboard-section">
+    <div class="container">
+        <h2>Leaderboard</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody id="leaderboard-body">
+                <!-- Dynamic leaderboard rows will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+</section>
+-->
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FitTrack. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
